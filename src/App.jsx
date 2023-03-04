@@ -1,12 +1,13 @@
 import React from 'react';
-import MyComponent from './MyComponent';
-import MyComponentExt from './MyComponentExt';
+import Greeting from './Greeting';
+import Person from './Person';
 
 function App() {
   return (
       <div>
-        <MyComponent></MyComponent>
-        {/* <MyComponentExt></MyComponentExt> */}
+        {/* <Greeting name="Sara"/> */}
+        {/* <Greeting name="Sara" age={25}/> */}
+        <Person name="Sara" age="30" gender="female" /> 
       </div>
   )
 }
