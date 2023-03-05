@@ -1,13 +1,10 @@
 import React from 'react';
-import Greeting from './Greeting';
-import Person from './Person';
+import Counter from './Counter';
 
 function App() {
   return (
       <div>
-        {/* <Greeting name="Sara"/> */}
-        {/* <Greeting name="Sara" age={25}/> */}
-        <Person name="Sara" age="30" gender="female" /> 
+        <Counter></Counter>
       </div>
   )
 }
