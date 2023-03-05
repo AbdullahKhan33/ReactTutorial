@@ -1,14 +1,20 @@
-import React from 'react';
-import Counter from './Counter';
-import ToggleButton from './ToggleButton';
+import React, { Component } from 'react';
 
-function App() {
-  return (
+class Greeting extends Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
       <div>
-        <Counter/>
-        {/* <ToggleButton /> */}
+        <Greeting name="Alice" />
+        <Greeting name="Bob" />
       </div>
-  )
+    );
+  }
 }
 
 export default App;
