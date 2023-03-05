@@ -1,10 +1,12 @@
 import React from 'react';
 import Counter from './Counter';
+import ToggleButton from './ToggleButton';
 
 function App() {
   return (
       <div>
-        <Counter></Counter>
+        <Counter/>
+        {/* <ToggleButton /> */}
       </div>
   )
 }
