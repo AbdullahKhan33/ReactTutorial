@@ -1,14 +1,13 @@
 import React from 'react';
 import Button from './Button';
+import Counter from './Counter';
+import LoginForm from './LoginForm';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
   return (
     <div>
-      <Button onClick={handleClick} label="Click me" />
+      {/* <Counter/> */}
+      <LoginForm/>
     </div>
   );
 }
