@@ -1,14 +1,19 @@
 import React from 'react';
-import Button from './Button';
+import ClassCounter from './ClassCounter';
+import FunctionCounter from './FunctionCounter';
+import TodoListClass from './ToDoList-Class';
+import TodoListFunction from './TodoListFunction';
+import UserInfo from './UserInfo-Class';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
 
   return (
     <div>
-      <Button onClick={handleClick} label="Click me" />
+      {/* <FunctionCounter/> */}
+      {/* <ClassCounter/> */}
+      {/* <TodoListFunction/> */}
+      {/* <TodoListClass/> */}
+      <UserInfo/>
     </div>
   );
 }
