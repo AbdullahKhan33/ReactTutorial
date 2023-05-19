@@ -1,16 +1,15 @@
 import React from 'react';
-import Button from './Button';
+import MyComponent from './MyComponent';
 
-function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
-  return (
-    <div>
-      <Button onClick={handleClick} label="Click me" />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>My App</h1>
+        <MyComponent />
+      </div>
+    );
+  }
 }
 
 export default App;
