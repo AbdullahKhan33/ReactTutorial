@@ -1,16 +1,18 @@
 import React from 'react';
-import Button from './Button';
+import ErrorBoundary from './ErrorBoundary';
+import MyComponent from './MyComponent';
 
-function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
-  return (
-    <div>
-      <Button onClick={handleClick} label="Click me" />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>App</h1>
+        <ErrorBoundary>
+          <MyComponent />
+        </ErrorBoundary>
+      </div>
+    );
+  }
 }
 
 export default App;
