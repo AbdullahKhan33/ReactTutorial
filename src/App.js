@@ -1,14 +1,11 @@
 import React from 'react';
 import Button from './Button';
+import TextInput from './TextInput';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
   return (
     <div>
-      <Button onClick={handleClick} label="Click me" />
+      <TextInput />
     </div>
   );
 }
