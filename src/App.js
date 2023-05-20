@@ -1,16 +1,27 @@
 import React from 'react';
-import Button from './Button';
+import Timer from './Timer';
 
-function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showTimer: true
+    };
+  }
 
-  return (
-    <div>
-      <Button onClick={handleClick} label="Click me" />
-    </div>
-  );
+  toggleTimer() {
+    this.setState((prevState) => ({ showTimer: !prevState.showTimer }));
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>App</h1>
+        <button onClick={() => this.toggleTimer()}>Toggle Timer</button>
+        {this.state.showTimer ? <Timer /> : null}
+      </div>
+    );
+  }
 }
 
 export default App;
