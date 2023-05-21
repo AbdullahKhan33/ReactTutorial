@@ -1,14 +1,15 @@
 import React from 'react';
-import Button from './Button';
+import Counter from './Counter';
+import ParentComponent from './ParentComponent';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
   return (
     <div>
-      <Button onClick={handleClick} label="Click me" />
+      {/* First Example */}
+      {/* <Counter /> */}
+
+      {/* Second Example */}
+      <ParentComponent/>
     </div>
   );
 }
