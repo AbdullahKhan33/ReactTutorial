@@ -1,14 +1,15 @@
 import React from 'react';
-import Button from './Button';
+import DataFetchingComponent from './DataFetchingComponent';
+import FormComponent from './FormComponent';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
   return (
     <div>
-      <Button onClick={handleClick} label="Click me" />
+      {/* First Example */}
+      {/* <DataFetchingComponent /> */}
+
+      {/* Second Example */}
+      <FormComponent/>
     </div>
   );
 }
