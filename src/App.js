@@ -5,9 +5,9 @@ import Greeting from './Greetings';
 
 function App() {
   return (
-    // <HelloWorld/>
+    <HelloWorld/>
     // <Greeting />
-    <Greeting name='PraisedOne' isLoggedIn='true'/>
+    // <Greeting name='PraisedOne' isLoggedIn='true'/>
 
   );
 }
