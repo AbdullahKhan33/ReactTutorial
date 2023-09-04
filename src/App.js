@@ -1,15 +1,14 @@
 import React from 'react';
 import Button from './Button';
+import HelloWorld from './HelloWorld';
+import Greeting from './Greetings';
 
 function App() {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
-
   return (
-    <div>
-      <Button onClick={handleClick} label="Click me" />
-    </div>
+    // <HelloWorld/>
+    // <Greeting />
+    <Greeting name='PraisedOne' isLoggedIn='true'/>
+
   );
 }
 
